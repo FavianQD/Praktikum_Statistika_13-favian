@@ -1,0 +1,27 @@
+#Latihan Pertama NO.1
+dataku_favian = read.delim("clipboard")
+View(dataku_favian)
+wilcox.test(dataku_favian$Sebelum,dataku_favian$Sesudah ,paired=TRUE)
+
+
+dataku_favian = read.delim("clipboard")
+View(dataku_favian)
+wilcox.test(dataku_favian$Sebelum,dataku_favian$Sesudah ,paired=TRUE)
+
+#Latihan kedua NO.1
+df_favian=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_favian$obat~df_favian$grup)
+# where y is numeric and A is A binary factor
+head(df_favian)
+rank(df_favian$obat)
+
+#LAT KETIGA NO.1 (TUGAS)
+dataku_favian = read.delim("clipboard")
+View(dataku_favian)
+wilcox.test(dataku_favian$Ganjil,dataku_favian$Genap ,paired=TRUE)
+
+#LAT KETIGA NO.2 (TUGAS)
+dataku_favian = read.delim("clipboard")
+View(dataku_favian)
+wilcox.test(dataku_favian$caffeine,dataku_favian$placebo ,paired=TRUE)
